@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  position: relative;
+  border-top: 10px solid #1098ad;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+h1::first-letter {
+  font-style: normal;
+}
+
+h4 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+a {
+  color: #1098ad;
+}
+
+ol,
+ul {
+  margin-left: 30px;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+  color: orangered;
+}
+a:visited {
+  color: #1098ad;
+}
+a:active {
+  background-color: black;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+nav a:link {
+  margin-right: 20px;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.author {
+  margin-left: 15px;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 40px;
+  margin-bottom: 30px;
+}
+
+.related {
+  margin-left: 0;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  position: absolute;
+  bottom: 50px;
+  cursor: pointer;
+  right: 50px;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.related-post {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.related-post:last-child {
+  margin-bottom: 0;
+}
+
+.related-link:link {
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 0;
+  display: block;
+}
+
+.related-author {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  gap: 75px;
+}

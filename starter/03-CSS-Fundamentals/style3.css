@@ -1,0 +1,206 @@
+/* 3rd Draft */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  line-height: 1.5;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+/*Common Selectors*/
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+/*Header Selectors*/
+
+h1 {
+  font-size: 26px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "Top";
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+nav {
+  font-size: 18px;
+}
+
+nav a:link {
+  margin: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+article header p {
+  font-style: italic;
+  font-size: 18px;
+}
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+li {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+ol,
+ul {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 50px;
+  width: 500px;
+}
+.related {
+  list-style: none;
+}
+.related-auther {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Pseudo classes */
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+li:nth-child(2) {
+  /* color: red;  2nd child in every list will be in red color. */
+}
+
+li:nth-child(even) {
+  /* color: red; Even number childs will be turned into red color. */
+}
+
+article p:last-child {
+  color: red;
+}
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/*Resolving conflicts */
+footer p {
+  color: green;
+  font-size: 16px;
+}
+
+.copyright {
+  color: lightblue;
+}
+
+.text {
+  color: chocolate;
+}
+
+#copyright {
+  color: red;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+button {
+  padding: 20px;
+  font-size: 22px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+}

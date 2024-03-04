@@ -1,0 +1,126 @@
+/*2nd DRAFT */
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+article header p {
+  font-style: italic;
+  font-size: 18px;
+}
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+.related {
+  list-style: none;
+}
+.related-auther {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+/* Pseudo classes */
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+li:nth-child(2) {
+  /* color: red;  2nd child in every list will be in red color. */
+}
+
+li:nth-child(even) {
+  /* color: red; Even number childs will be turned into red color. */
+}
+
+article p:last-child {
+  color: red;
+}
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/*Resolving conflicts */
+
+footer p {
+  color: green;
+}
+
+.copyright {
+  color: lightblue;
+}
+
+.text {
+  color: chocolate;
+}
+
+#copyright {
+  color: red;
+}

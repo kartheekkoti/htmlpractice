@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagination Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+    /*
+    MAIN COLOR: #087f5b
+    GREY COLOR: #343a40
+    */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'inter', sans-serif;
+      /* display: flex;
+      align-items: center;
+      justify-content: center; */
+    }
+
+    .pagination {
+      width: 800px;
+      margin: 200px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px;
+    }
+
+    .pageNo {
+      height: 32px;
+      width: 32px;
+      border: none;
+      background-color: white;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .pageNo:hover {
+      background-color: #087f5b;
+      color: white;
+    }
+
+    .btn {
+      height: 48px;
+      width: 48px;
+      border: 2px solid #087f5b;
+      border-radius: 50%;
+      cursor: pointer;
+      position: absolute;
+
+    }
+
+    .btn:hover {
+      background-color: #087f5b;
+    }
+
+    .btn:hover .btn-icon {
+      stroke: white;
+    }
+
+    .btn-icon {
+      stroke: #087f5b;
+    }
+
+    /* .btn-icon :hover {
+      stroke: white;
+    } */
+
+    .btn--left {
+      left: 0;
+      transform: translate(100px, 0);
+    }
+
+    .btn--right {
+      right: 0;
+      transform: translate(-100px, 0);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pagination">
+
+    <button class="pageNo">1</button>
+    <button class="pageNo">2</button>
+    <button class="pageNo">3</button>
+    <button class="pageNo">4</button>
+    <button class="pageNo">5</button>
+    <button class="pageNo">6</button>
+    <button class="pageNo">7</button>
+    <button class="pageNo">8</button>
+    <button class="pageNo">9</button>
+    <button class="pageNo">10</button>
+    <button class="pageNo">11</button>
+    <button class="pageNo">12</button>
+    <button class="pageNo">13</button>
+    <button class="pageNo">14</button>
+    <button class="pageNo">15</button>
+
+    <button class="btn btn--left">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="btn-icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+      </svg>
+    </button>
+    <button class="btn btn--right"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+        stroke-width="1.5" stroke="currentColor" class="btn-icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+      </svg></button>
+  </div>
+
+</body>
+
+</html>
